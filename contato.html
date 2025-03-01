@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header container-fluid p-5 text-center">
+        <h1>Sustentabilidade e Consciência Ambiental</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="top container-fluid">
+          <a class="top navbar-brand" href="#">EcoSenai</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="top nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+              </li>
+              <li class="nav-item">
+                <a class="top nav-link active" aria-current="page" href="sustentabilidade.html">Sustentabilidade</a>
+              </li>
+              <li class="nav-item dropdown">
+              </li>
+              <li class="nav-item">
+                <a class="top nav-link active" aria-current="page" href="ambiente.html">Meio Ambiente</a>
+              </li>
+              <li class="nav-item dropdown">
+              </li>
+              <li class="nav-item">
+                <a class="top nav-link active" aria-current="page" href="contato.html">Contate-nos</a>
+              </li>
+              <li class="nav-item dropdown">
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a class="btn btn-primary" href="login.html" role="button">Login</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-5 d-flex justify-content-center align-items-center card box-shadow p-3 col-md-4 py-5 mb-5">
+        <h2 class="">Contate-nos</h2>
+        <form name="frmFaleconosco" method="get" action="#" onsubmit="return validaFaleConosco()">
+          <div class="form-group contat">
+            <label for="nome">Nome</label>
+            <input type="text" name="txtnome" class="form-control" id="nome" placeholder="Seu nome">
+          </div>
+          <div class="form-group contat">
+            <label for="email">Email</label>
+            <input type="email" name="txtmail" id="email" class="form-control" id="email" placeholder="Seu email">
+          </div>
+          <div class="form-group contat">
+            <label for="assunto">Assunto</label>
+            <input type="text" name="txtassunto" class="form-control" id="assunto" placeholder="Assunto da mensagem">
+          </div>
+          <div class="form-group contat">
+            <label for="comentario">Comentário</label>
+            <textarea name="txtcomentario" class="form-control" id="comentario" rows="5" placeholder="Sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary botao">Enviar</button>
+        </form>
+      </div>
+      <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Consciência Ambiental. Todos os direitos reservados.</p>
+      </footer>
+</body>
+</html>
